@@ -2,6 +2,8 @@
 
 alias ls="ls --color"
 alias vim="nvim"
+alias fd="fdfind"
+alias tree="tree -C"
 
 source $HOME/.nvm/nvm.sh
 
