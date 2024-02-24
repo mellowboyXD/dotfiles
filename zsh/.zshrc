@@ -5,6 +5,8 @@ alias vim="nvim"
 alias fd="fdfind"
 alias tree="tree -C"
 
+alias personal="cd $HOME/personal/"
+
 source $HOME/.nvm/nvm.sh
 
 export PATH=$PATH:$HOME/.local/share/zig-dev/
