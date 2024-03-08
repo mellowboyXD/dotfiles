@@ -16,7 +16,7 @@ export PATH=$PATH:$HOME/.bun/bin/
 autoload -U colors && colors
 precmd() { print -rP "%B%{$fg[grey]%}%~% %{$reset_color%}"}
 #PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M%{$fg[red]%}]%{$reset_color%}$%b "
 
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
