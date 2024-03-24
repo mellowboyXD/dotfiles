@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 # Gaps
-#for_window [class="^.*"] border pixel 1 
+for_window [class="^.*"] border pixel 1 
 #gaps inner 6
 #gaps outer 6
 
