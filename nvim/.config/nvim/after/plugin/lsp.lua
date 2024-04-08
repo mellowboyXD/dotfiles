@@ -39,7 +39,12 @@ local cmp = require('cmp')
       ['<C-b>'] = cmp_action.luasnip_jump_backward(),
       ['<C-u>'] = cmp.mapping.scroll_docs(-4),
       ['<C-d>'] = cmp.mapping.scroll_docs(4),
-    })
+    }),
+    sources = cmp.config.sources({
+        { name = 'nvim_lsp' },
+    }, {
+        { name = 'buffer' },
+    }),
   })
 
 lsp.set_preferences({
@@ -51,6 +56,8 @@ lsp.set_preferences({
         info = 'I'
     }
 })
+
+--local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
@@ -67,7 +74,9 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-lsp.setup()
+lsp.setup({
+    capabilities = capabilities,
+})
 
 vim.diagnostic.config({
     virtual_text = true
