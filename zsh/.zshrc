@@ -7,6 +7,9 @@ alias tree="tree -C"
 
 alias personal="cd $HOME/personal/"
 
+# My ceasar's cipher algorithm
+alias cciphr="$HOME/personal/cciphr/bin/cciphr"
+
 source $HOME/.nvm/nvm.sh
 
 export PATH=$PATH:$HOME/.local/share/zig-dev/
