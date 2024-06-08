@@ -1,7 +1,8 @@
 #Mellowboy: Make Sure to Backup
 
 alias ls="ls --color"
-alias vim="nvim"
+alias vi="/usr/bin/vim"
+alias vim="/snap/bin/nvim"
 alias fd="fdfind"
 alias tree="tree -C"
 
@@ -14,6 +15,7 @@ source $HOME/.nvm/nvm.sh
 
 export PATH=$PATH:$HOME/.local/share/zig-dev/
 export PATH=$PATH:$HOME/.bun/bin/
+export PATH=$PATH:/usr/local/go/bin
 
 # Enable colors and change prompt:
 autoload -U colors && colors
