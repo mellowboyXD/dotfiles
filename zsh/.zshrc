@@ -13,9 +13,9 @@ alias cciphr="$HOME/personal/cciphr/bin/cciphr"
 
 source $HOME/.nvm/nvm.sh
 
-export PATH=$PATH:$HOME/.local/share/zig-dev/
-export PATH=$PATH:$HOME/.bun/bin/
-export PATH=$PATH:/usr/local/go/bin
+#export PATH=$PATH:$HOME/.local/share/zig-dev/
+#export PATH=$PATH:$HOME/.bun/bin/
+#export PATH=$PATH:/usr/local/go/bin
 
 # Enable colors and change prompt:
 autoload -U colors && colors
