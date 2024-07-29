@@ -93,7 +93,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -195,10 +195,11 @@ exec_always feh --no-fehbg --bg-scale '/home/boy/Pictures/desktop.jpg'
 
 bindsym $mod+x exec "i3lock -c 000000"
 bindsym $mod+g exec google-chrome
-bindsym $mod+b exec firefox
+bindsym $mod+f exec firefox
 
 # Assign program to workspace
 for_window [class="Google-chrome"] move to workspace $ws2
+for_window [class="firefox"] move to workspace $ws2
 
 # Modify Gaps
 bindsym $mod+z		gaps outer current plus 5
