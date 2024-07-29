@@ -195,6 +195,7 @@ exec_always feh --no-fehbg --bg-scale '/home/boy/Pictures/desktop.jpg'
 
 bindsym $mod+x exec "i3lock -c 000000"
 bindsym $mod+g exec google-chrome
+bindsym $mod+b exec firefox
 
 # Assign program to workspace
 for_window [class="Google-chrome"] move to workspace $ws2
