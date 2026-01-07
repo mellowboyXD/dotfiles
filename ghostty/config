@@ -1,0 +1,43 @@
+font-family = Berkeley Mono
+font-style = Regular
+font-size = 13
+font-thicken = true
+
+background-opacity = 0.85
+
+adjust-underline-position = 40%
+adjust-underline-thickness = -60%
+
+cursor-style = block
+cursor-style-blink = false
+
+shell-integration = bash
+shell-integration-features = no-cursor
+
+# window splits
+keybind = ctrl+t=new_split:right
+keybind = ctrl+left=goto_split:left
+keybind = ctrl+right=goto_split:right
+
+keybind = ctrl+e=equalize_splits
+keybind = ctrl+shift+left=resize_split:left,10
+keybind = ctrl+shift+right=resize_split:right,10
+
+window-width = 120
+window-height = 40
+window-padding-x = 4
+
+confirm-close-surface = false
+clipboard-paste-protection = false
+unfocused-split-opacity = 1.0
+
+theme = iTerm2 Default
+background = #111111
+foreground = #f4f4ff
+cursor-color = #ff0078
+
+selection-background = 1d3c3b
+selection-foreground = eeeeee
+
+palette = 4=#3D52E2
+palette = 12=#344CFF
